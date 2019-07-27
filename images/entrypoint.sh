@@ -137,4 +137,4 @@ fi
 echo "Entering sleep... (success)"
 
 # Sleep forever.
-sleep infinity
+tail -f /dev/null
