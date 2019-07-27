@@ -11,9 +11,8 @@ copy  --from=builder /go/multus-cni/bin /usr/src/multus-cni/bin
 copy  images /usr/src/multus-cni/images
 
 LABEL io.k8s.display-name="Multus CNI" \
-      io.k8s.description="This is a component of OpenShift Container Platform and provides a meta CNI plugin." \
-      io.openshift.tags="openshift" \
-      maintainer="Doug Smith <dosmith@redhat.com>"
+      io.k8s.description="This is a component of Alpine Platform and provides a meta CNI plugin." \
+      maintainer="Wxdlong <wxdlong@qq.com>"
 # does it require a root user?
 # USER 1001
 
