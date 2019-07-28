@@ -8,7 +8,10 @@ If you follow the office get started guide on win10 docker-ce env. k8s DNS pod m
 
 
 ```bash
-kubelet, docker-desktop  (combined from similar events): Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "c0d8f2ad4b30fcf280765599a9b50c8eeab1cc3aa65845188c5c417976373c42" network for pod "coredns-fb8b8dccf-947sp": NetworkPlugin cni failed to set up pod "coredns-fb8b8dccf-947sp_kube-system" network: fork/exec /opt/cni/bin/multus: no such file or directory
+kubelet, docker-desktop  (combined from similar events): Failed create pod sandbox: rpc error: code = Unknown 
+desc = failed to set up sandbox container "c0d8f2ad4b30fcf280765599a9b50c8eeab1cc3aa65845188c5c417976373c42" 
+network for pod "coredns-fb8b8dccf-947sp": NetworkPlugin cni failed to set up pod "coredns-fb8b8dccf-947sp_kube-system" 
+network: fork/exec /opt/cni/bin/multus: no such file or directory
 ```
 
 # So Why
