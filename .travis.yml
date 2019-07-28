@@ -1,12 +1,14 @@
-# services:
-#   - docker
 before_install:
   - echo "before install"
-  - echo "hello multus" > multus
-  - ls -lth
 
 install:
-  - echo "need install"
+  - echo "install"
+
+script:
+  - echo "script"
+
+after_success:
+  - echo "after_success"
 
 deploy:
   provider: releases
