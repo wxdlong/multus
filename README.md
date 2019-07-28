@@ -25,7 +25,7 @@ office docker image base on centos, and it need below ldd. But docker-ce base on
 
 # How
 
-1. Use golang rebuild this docker image.
+1. Use golang as base image to rebuild the multus docker image.
 2. Read and follow the guide. but use images/multus-daemonset.yml instead.
  https://github.com/intel/multus-cni/blob/master/doc/quickstart.md 
 
