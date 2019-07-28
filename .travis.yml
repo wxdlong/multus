@@ -1,15 +1,23 @@
+services:
+  - docker
+
 before_install:
   - echo "before install"
+  - docker build . -t multus
 
 install:
   - echo "install"
-  - echo "multus to github?" > multus
+  - docker run -itd --name multus multus
+
 
 script:
   - echo "script"
+  - docker cp multus:/usr/src/multus-cni/bin/multus multus
 
 after_success:
   - echo "after_success"
+  - ls -lth
+  - docker rm -f multus
 
 deploy:
   provider: releases
