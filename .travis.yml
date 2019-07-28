@@ -1,16 +1,13 @@
 services:
-  - docker
-
+- docker
 before_install:
-  - echo "before install"
-  - echo "hello multus" > multus
-  - ls -lth
-  
+- echo "before install"
+- echo "hello multus" > multus
+- ls -lth
 deploy:
   provider: releases
   api_key:
-    secure: "tgPHFokGAQD/VqbETEl1hh2vGFACT9hxAv9BZ4yP7WPlIgm9t0/SE85SK99ojAh30y4/Vc+st47pI1xKXGYYhVZPFe75z7PKTCC5g3+U41KgydC8LPdaQoAlVYKNXbvxaKw4VQ0twe/3wweUw9TdYHw3krMEHsqDhBPeeqJI6zSkZsv9FX7tJLNQdnDRzYXxoIiuU3IB2m652xsuhMI29ilXjqD8+YVBjEkhrvO5UrWLpkXOf8wAH+EOgRshctu2pMcXEEDbGsVRofO84fOdgNpGSdmkS8rseSQEWGA/x1pcvNv2cvu6rQihPB5yJH14YYlvvICg7YnhqGqSsXk1pg8SNeidzdxSBkOj533e86WBA8X9A704PdvEfMzuEc/SJ0j2XP37qHkPGvMAPnpwk/81TA7GaAmItEVORyl3j0pcLFgweWD34imt9mnteOs0vkHEiWgr7+NHburWka+VsNhu7gzub4Enc1yvcSsJdJ5tk91lfF4TxraExdXPB1uLxR+Poo3BLjbl6p8InZIEI/oas/kz9yeVCJPYz7dgxfK9jHwqfAo8XlkS7WIq/k2M4ydL2ljG98W1ziL0Yze39ONv1beushESl11nj7vsD74vwZxKy4ViEjRTEuQTxo8CMCn5niZB516K8iGcHFwXVdkPjMdDWX3eXyMqHvJYDzU="
-  file: "multus"
-  skip_cleanup: true
+    secure: EGRcnen0aIfXq1mEZLLJ1gZwgTWALtGRhceJVPk/4yYllzsNC/67vUz5Hfw+Rs+0py7H6m4vF6Z0VS9hlrH/D6pAr/Gdq3Jramn6UBySPMowGjGLlT6Tr2YT8wyZQX6EeNRVwYM7xJZnZnkP2AN1m8YIG8UC4mAH8jRLuLZjLqtmdi78wrB3/j/doMUkMhBL6M8UQpjl8PMhrbnTB+2rzQfk6R0V+7ulGwYyQaEkjQRzAxSQ4CjSGp9nmSGGaruscgRtFTKxeIqAKcvuBF9DJWBY7GoebElSkiWJ6PF9byF+BPqbupNciyjwpkySbu8a7hWDGkdJtrDd55JCbuOzAmI2phojC13JiOCve4CoIYcDIe7kBdrbNFdv4S2J8ckLsLdsB5UMKIyuYCJNbVlBxo4emxLUQWyyQQ1JlImWhNVDoEB50HpqmNfJg0pb/wzI4YN9xVohkDCOvQiPvjdP+BdtfqNvgplBDxz+6wPuEXShPkCARUMQy1xMAMXJz9t16j0okxqpp1ufdZsX3wndXl4pgSyYri9+d5NcO7nCzeyYfEOI7XGo7S1b7ExqAWA0A/dAqzObJpCj3Z3+PufvW/QLF17VqXlHfqI0ThsDkQ/qeG2uJuReGNslluJbGvH9GZF/dJ3HYCbcTbgSfvwLCpebLN5LyK9MZEmXGRmZ0Gs=
+  file: multus
   on:
-    tags: true
+    repo: wxdlong/multus
