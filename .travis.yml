@@ -1,9 +1,9 @@
 services:
-- docker
+  - docker
 before_install:
-- echo "before install"
-- echo "hello multus" > multus
-- ls -lth
+  - echo "before install"
+  - echo "hello multus" > multus
+  - ls -lth
 deploy:
   provider: releases
   api_key:
