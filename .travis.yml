@@ -3,6 +3,7 @@ before_install:
 
 install:
   - echo "install"
+  - echo "multus to github?" > multus
 
 script:
   - echo "script"
@@ -18,3 +19,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: wxdlong/multus
+    tags: true
